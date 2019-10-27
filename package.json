@@ -1,0 +1,17 @@
+{
+  "name": "face-recognition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+
+  },
+
+  "author": "Adam Price",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adsp16/face-recognition-app/issues"
+  },
+  "homepage": "https://adsp16.github.io/face-recognition-app"
+}
