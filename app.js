@@ -14,12 +14,11 @@ const startVideo = () => {
 }
 
 
-
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromDisk('./models'),
-  faceapi.nets.faceLandmark68Net.loadFromDisk('./models'),
-  faceapi.nets.faceRecognitionNet.loadFromDisk('./models'),
-  faceapi.nets.faceExpressionNet.loadFromDisk('./models')
+  faceapi.nets.tinyFaceDetector.loadFromUri('https://adsp16.github.io/face-recognition-app/models'),
+  faceapi.nets.faceLandmark68Net.loadFromUri('https://adsp16.github.io/face-recognition-app/models'),
+  faceapi.nets.faceRecognitionNet.loadFromUri('https://adsp16.github.io/face-recognition-app/models'),
+  faceapi.nets.faceExpressionNet.loadFromUri('https://adsp16.github.io/face-recognition-app/models')
 ]).then(startVideo)
 
 
